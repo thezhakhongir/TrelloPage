@@ -4,13 +4,13 @@ import App from "./App";
 import { Provider } from "react-redux";
 import { store } from "./store";
 import "./service/fireBase";
-import { BrowserRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 
 ReactDOM.render(
-  <BrowserRouter>
-    <Provider store={store}>
+  <Provider store={store}>
+    <HashRouter basename="/">
       <App />
-    </Provider>
-  </BrowserRouter>,
+    </HashRouter>
+  </Provider>,
   document.getElementById("root")
 );
