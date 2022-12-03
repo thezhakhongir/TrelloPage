@@ -9,7 +9,7 @@ function App() {
   const { email } = useAuth();
   return (
     <Routes>
-      <Route element={<TrelloPage />}>
+      <Route path="*" element={<TrelloPage />}>
         <Route path="trello" element={<Trello title={email} />} />
       </Route>
       <Route path="/" element={<LogIn />} />
