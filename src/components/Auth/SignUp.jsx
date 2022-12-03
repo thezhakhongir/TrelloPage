@@ -48,7 +48,7 @@ export const SignUp = () => {
         <AuthForm title="Sign Up" handleClick={signUpHandle} />
         <div style={{ textAlign: "center" }}>
           <p style={{ marginBottom: "10px" }}>Already a member?</p>
-          <Link to="/login">
+          <Link to="/">
             <p
               style={{ color: "#A15886", fontWeight: "600", cursor: "pointer" }}
             >

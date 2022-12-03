@@ -1,8 +1,9 @@
-import { Navigate } from "react-router-dom";
-import { Trello } from "../components/Trello/Trello";
+import { Outlet } from "react-router-dom";
+
 import { useAuth } from "../hooks/useAuth";
+import { LogIn } from "../components/Auth/LogIn";
 
 export const TrelloPage = () => {
-  const { isAuth, email } = useAuth();
-  return isAuth ? <Trello title={email} /> : <Navigate to="login" />;
+  const { isAuth } = useAuth();
+  return isAuth ? <Outlet /> : <LogIn />;
 };

@@ -87,7 +87,7 @@ export const Trello = ({ title }) => {
               }}
             >
               <p style={{ color: "black" }}>{title}</p>
-              <Link to="/login">
+              <Link to="/">
                 <IconButton
                   onClick={() => dispatch(removeUser())}
                   size={"small"}
