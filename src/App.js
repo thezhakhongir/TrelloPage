@@ -7,8 +7,8 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
+        <Route path="TrelloPage" element={<LogIn />} />
         <Route path="login" element={<LogIn />} />
-        <Route path="/" element={<LogIn />} />
         <Route path="signup" element={<SignUp />} />
         <Route path="trello" element={<Trello />} />
       </Routes>
